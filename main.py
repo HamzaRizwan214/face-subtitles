@@ -33,7 +33,7 @@ class ProjectAuraApp:
         
         self.current_text = ""
         self.last_text_time = 0
-        self.text_persistence = 3.0  # Seconds to keep text on screen after speaking
+        self.text_persistence = 3.0 
 
     def run(self):
         print("[Aura] Starting audio stream...")
