@@ -80,6 +80,10 @@ class ProjectAuraApp:
         cv2.destroyAllWindows()
         print("[Aura] Shutdown complete.")
 
+# if __name__ == "__main__":
+#     app = ProjectAuraApp()
+#     app.run()
+
 if __name__ == "__main__":
-    app = ProjectAuraApp()
+    app = projectAuraApp()
     app.run()
