@@ -11,6 +11,7 @@ if not os.path.exists(model_path):
     print("Downloading model...")
     urllib.request.urlretrieve("https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task", model_path)
 
+#this is base option face detector
 base_options = python.BaseOptions(model_asset_path=model_path)
 options = vision.FaceLandmarkerOptions(base_options=base_options, num_faces=1)
 detector = vision.FaceLandmarker.create_from_options(options)
