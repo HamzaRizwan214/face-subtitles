@@ -16,6 +16,7 @@ base_options = python.BaseOptions(model_asset_path=model_path)
 options = vision.FaceLandmarkerOptions(base_options=base_options, num_faces=1)
 detector = vision.FaceLandmarker.create_from_options(options)
 
+#image test main function
 image = np.zeros((480, 640, 3), dtype=np.uint8)
 mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=image)
 result = detector.detect(mp_image)
