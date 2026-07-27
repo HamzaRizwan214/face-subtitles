@@ -5,6 +5,7 @@ import urllib.request
 import os
 import numpy as np
 
+#defining model path for natural language proccessing
 print("Imports successful!")
 model_path = "face_landmarker.task"
 if not os.path.exists(model_path):
