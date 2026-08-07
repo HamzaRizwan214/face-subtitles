@@ -14,7 +14,7 @@ except ImportError:
 
 class FaceTracker:
     def __init__(self, alpha=0.25):
-        # 1. Download the modern Face Landmarker model if missing
+        # 1. Download the modern Face Landmarker model
         self.model_path = "face_landmarker.task"
         if not os.path.exists(self.model_path):
             print("[Tracker] Downloading MediaPipe Face Landmarker model...")
