@@ -17,7 +17,8 @@ class CameraManager:
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, config.FRAME_WIDTH)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, config.FRAME_HEIGHT)
         self.cap.set(cv2.CAP_PROP_FPS, config.FPS)
-        
+
+        #correcting the camera opening check
         if not self.cap.isOpened():
             raise RuntimeError(f"Error: Could not open camera {self.camera_id}")
 
