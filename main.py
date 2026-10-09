@@ -82,10 +82,10 @@ class ProjectAuraApp:
 
 
 #using actual main function of the project
+# if __name__ == "__main__":
+#     app = ProjectAuraApp()
+#     app.run()
+
 if __name__ == "__main__":
     app = ProjectAuraApp()
     app.run()
-
-# if __name__ == "__main__":
-#     app = projectAuraApp()
-#     app.run()
