@@ -13,6 +13,7 @@ from engine.transcriber import Transcriber
 from engine.renderer import OverlayRenderer
 import config
 
+
 class ProjectAuraApp:
     def __init__(self):
         print("[Aura] Initializing core modules...")
